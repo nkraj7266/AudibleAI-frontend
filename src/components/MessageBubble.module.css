@@ -1,0 +1,104 @@
+.userBubble {
+	background: #e3f2fd;
+	color: #1565c0;
+	align-self: flex-end;
+	margin: 0.5em 0;
+	padding: 0.75em 1em;
+	border-radius: 1em 1em 0 1em;
+	max-width: 50vw;
+	box-shadow: 0 1px 4px rgba(21, 101, 192, 0.08);
+	display: flex;
+	flex-direction: column;
+}
+
+.aiBubble {
+	background: #fffde7;
+	color: #f9a825;
+	align-self: flex-start;
+	margin: 0.5em 0;
+	padding: 0.75em 1em;
+	border-radius: 1em 1em 1em 0;
+	width: 90%;
+	max-width: 60vw;
+	box-shadow: 0 1px 4px rgba(249, 168, 37, 0.08);
+	display: flex;
+	flex-direction: column;
+}
+
+.sender {
+	font-size: 0.85em;
+	font-weight: 600;
+	margin-bottom: 0.25em;
+}
+
+.text {
+	font-size: 1.05em;
+	word-break: break-word;
+	padding: 0.2em 0;
+}
+
+/* Markdown headings */
+.text h1,
+.text h2,
+.text h3 {
+	margin: 0.5em 0 0.3em 0;
+	font-weight: bold;
+	color: #f9a825;
+}
+
+/* Markdown paragraphs */
+.text p {
+	margin: 0.3em 0;
+}
+
+/* Markdown code blocks */
+.text pre,
+.text code {
+	background: #fdeec5;
+	border-radius: 4px;
+	padding: 0.2em 0.4em;
+	font-family: "Fira Mono", "Consolas", monospace;
+	font-size: 0.98em;
+	color: #895a0f;
+	overflow-x: auto;
+	margin: 1em 0;
+}
+
+/* Markdown lists */
+.text ul,
+.text ol {
+	margin: 0.3em 0 0.3em 1.2em;
+	padding-left: 1em;
+}
+
+/* Markdown blockquotes */
+.text blockquote {
+	border-left: 3px solid #e0e0e0;
+	margin: 0.3em 0;
+	padding-left: 1em;
+	color: #666;
+	font-style: italic;
+}
+
+/* Markdown links */
+.text a {
+	color: #1976d2;
+	text-decoration: underline;
+	word-break: break-all;
+}
+
+.text hr {
+	border: none;
+	border-top: 1px solid #e0e0e0;
+	margin: 1em 0;
+}
+
+@media (max-width: 768px) {
+	.userBubble,
+	.aiBubble {
+		width: 95%;
+		max-width: 95vw;
+		font-size: 0.98em;
+		padding: 0.65em 0.7em;
+	}
+}

@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: #ffb70094 transparent;
+}
+
+body {
+	font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
+	background-color: #f7f9fb;
+	color: #222;
+}
+
+input,
+button {
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* Custom thin, light, transparent scrollbar for all scrollable elements */
+::-webkit-scrollbar {
+	width: 6px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ffb70094;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Utility classes */
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	input,
+	button {
+		font-size: 1rem;
+		padding: 0.75em 1em;
+	}
+}
